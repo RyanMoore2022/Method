@@ -16,7 +16,11 @@ public class methods {
         return hello+word;
     }
 
-
+    public int numberMultiplier() {
+        int numberOne = 10;
+        int numberTwo = 2;
+        return numberOne * numberTwo;
+    }
 
 
 
