@@ -5,9 +5,16 @@ public class methods {
     public static void main(String[] args){
 
     System.out.println("Hello World");
+    System.out.println("---------------------------------------");
     System.out.println(hello());
+        System.out.println("---------------------------------------");
     System.out.println(numberMultiplier());
+        System.out.println("---------------------------------------");
     System.out.println(numberDivider());
+        System.out.println("---------------------------------------");
+    System.out.println(higherNumber());
+        System.out.println("---------------------------------------");
+
     }
 
     public static String hello(){
@@ -25,13 +32,32 @@ public class methods {
         return numberOne * numberTwo;
     }
 
-    public static Double numberDivider() {
+    public static double numberDivider() {
         double numberOne = 10;
         double numberTwo = 2;
         return numberOne / numberTwo;
     }
 
-
+    public static double higherNumber(){
+       double highestNumber;
+        Scanner keyboard = new Scanner(System.in);
+       System.out.println("Give a number");
+        double numberOne;
+            numberOne = keyboard.nextDouble();
+       System.out.println("Give another number");
+        double numberTwo;
+            numberTwo = keyboard.nextDouble();
+        if (numberOne>numberTwo){
+            highestNumber = numberOne;
+        }
+        else if (numberOne < numberTwo){
+            highestNumber = numberTwo;
+        }
+        else {
+            highestNumber = 0;
+        }
+        return highestNumber;
+    }
 
 
 }
