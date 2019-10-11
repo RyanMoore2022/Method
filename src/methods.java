@@ -14,6 +14,8 @@ public class methods {
         System.out.println("---------------------------------------");
     System.out.println(higherNumber());
         System.out.println("---------------------------------------");
+    System.out.println(flipWord());
+        System.out.println("---------------------------------------");
 
     }
 
@@ -35,7 +37,8 @@ public class methods {
     public static double numberDivider() {
         double numberOne = 10;
         double numberTwo = 2;
-        return numberOne / numberTwo;
+        double finalNumber = numberOne / numberTwo;
+        return finalNumber;
     }
 
     public static double higherNumber(){
@@ -58,6 +61,13 @@ public class methods {
         }
         return highestNumber;
     }
-
+    public static String flipWord(){
+        String wordOne;
+        wordOne = " Hello ";
+        String wordTwo;
+        wordTwo = " World ";
+        System.out.println("Hello World");
+        return wordTwo+wordTwo;
+    }
 
 }
