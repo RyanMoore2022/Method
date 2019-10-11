@@ -8,9 +8,11 @@ public class methods {
     System.out.println("---------------------------------------");
     System.out.println(hello());
         System.out.println("---------------------------------------");
-    System.out.println(numberMultiplier());
+        System.out.println("Two numbers multiplied are;");
+    System.out.println(numberMultiplier(2,10));
         System.out.println("---------------------------------------");
-    System.out.println(numberDivider());
+        System.out.println("Two numbers divided are;");
+    System.out.println(numberDivider(10, 2));
         System.out.println("---------------------------------------");
     System.out.println(higherNumber());
         System.out.println("---------------------------------------");
@@ -28,15 +30,11 @@ public class methods {
         return hello+word;
     }
 
-    public  static int numberMultiplier() {
-        int numberOne = 10;
-        int numberTwo = 2;
+    public  static int numberMultiplier(int numberOne, int numberTwo) {
         return numberOne * numberTwo;
     }
 
-    public static double numberDivider() {
-        double numberOne = 10;
-        double numberTwo = 2;
+    public static double numberDivider(int numberOne, int numberTwo) {
         double finalNumber = numberOne / numberTwo;
         return finalNumber;
     }
@@ -63,11 +61,11 @@ public class methods {
     }
     public static String flipWord(){
         String wordOne;
-        wordOne = " Hello ";
+        wordOne = "Hello ";
         String wordTwo;
-        wordTwo = " World ";
+        wordTwo = "World ";
         System.out.println("Hello World");
-        return wordTwo+wordTwo;
+        return wordTwo+wordOne;
     }
 
 }
